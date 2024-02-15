@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz System</title>
+    <link rel="stylesheet" href="Online-quiz.css">
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: powderblue;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+    }
+    
+    /* Quiz layout */
+    .quiz-questions {
+        margin-bottom: 20px;
+    }
+    
+    .quiz-questions h2 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .question {
+        margin-bottom: 20px;
+    }
+    
+    button[type="submit"]{
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border:none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button[type="submit"]:hover{
+        background-color: orangered;
+    }
+    /* Result display */
+    .result-display {
+        background-color: #e0e0e0;
+        padding: 10px;
+    }
+    
+    /* Responsive design */
+    @media screen and (max-width: 600px) {
+        .container {
+            padding: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="quiz-questions">
+            <h2>Quiz Questions</h2>
+            <form id="quiz-form">
+                <div class="question" id="question1">
+                    <h3>Question 1:</h3>
+                    <p>1) HTML stands for-</p>
+                    <input type="radio" name="question1" value="a . High Text Machine Language" id="q1-option1">
+                    <label for="q1-option1">a . High Text Machine Language</label><br>
+                    <input type="radio" name="question1" value="b . Hyper Text and links Markup Language" id="q1-option2">
+                    <label for="q1-option2">b . Hyper Text and links Markup Language</label><br>
+                    <input type="radio" name="question1" value="c . Hyper Text Markup Language" id="q1-option3">
+                    <label for="q1-option3">c . Hyper Text Markup Language</label><br>
+                    <input type="radio" name="question1" value="d . None of these" id="q1-option4">
+                    <label for="q1-option4">d . None of these</label><br>
+                </div>
+                <hr>
+                <div class="question" id="question2">
+                    <h3>Question 2:</h3>
+                    <p>2) The correct sequence of HTML tags for starting a webpage is -</p>
+                    <input type="radio" name="question2" value="a . Head, Title, HTML, body" id="q1-option1">
+                    <label for="q1-option1">a . Head, Title, HTML, body</label><br>
+                    <input type="radio" name="question2" value="b . HTML, Body, Title, Head" id="q1-option2">
+                    <label for="q1-option2">b . HTML, Body, Title, Head</label><br>
+                    <input type="radio" name="question2" value="c . HTML, Head, Title, Body" id="q1-option3">
+                    <label for="q1-option3">c . HTML, Head, Title, Body</label><br>
+                    <input type="radio" name="question2" value="d . HTML, Head, Title, Body" id="q1-option4">
+                    <label for="q1-option4">d . HTML, Head, Title, Body</label><br>
+                </div>
+                <hr>
+                <div class="question" id="question3">
+                    <h3>Question 3:</h3>
+                    <p>3)  Which character is used to represent the closing of a tag in HTML?</p>
+                    <input type="radio" name="question3" value="a .  \" id="q1-option1">
+                    <label for="q1-option1">a . \</label><br>
+                    <input type="radio" name="question3" value="b . !" id="q1-option2">
+                    <label for="q1-option2">b . !</label><br>
+                    <input type="radio" name="question3" value="c . /" id="q1-option3">
+                    <label for="q1-option3">c . /</label><br>
+                    <input type="radio" name="question3" value="d . ." id="q1-option4">
+                    <label for="q1-option4">d . .</label><br>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="result-display">
+            <h2>Result Display Area</h2>
+            <p id="result"></p>
+            <div class="container">
+                <u><h1>Quiz Results</h1></u>
+                <div class="result">
+                    <p><b>Question 1:</b> HTML stands for-</p>
+                    <p><b>Your Answer:</b> -------</p>
+                    <p><b>correct Answer:</b> Hyper Text Markup Language</p>
+                </div>
+                <hr>
+                <div class="result">
+                    <p><b>Question 2:</b> The correct sequence of HTML tags for starting a webpage is -</p>
+                    <p><b>Your Answer:</b> -------</p>
+                    <p><b>correct Answer:</b> HTML, Head, Title, Body</p>
+                </div>
+                <hr>
+                <div class="result">
+                    <p><b>Question 3:</b> Which character is used to represent the closing of a tag in HTML?</p>
+                    <p><b>Your Answer:</b> -------</p>
+                    <p><b>correct Answer:</b> /</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
